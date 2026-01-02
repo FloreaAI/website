@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Start Guide - Florea AI Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            line-height: 1.6;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2ecc71;
+            border-bottom: 3px solid #2ecc71;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #1a7a4a;
+            margin-top: 30px;
+        }
+        .task {
+            background: #f9f9f9;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 4px solid #2ecc71;
+            border-radius: 5px;
+        }
+        .task h3 {
+            margin-top: 0;
+            color: #2ecc71;
+        }
+        code {
+            background: #e8f5e9;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .success {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        .button {
+            display: inline-block;
+            background: #2ecc71;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 5px;
+        }
+        .button:hover {
+            background: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Florea AI Website - Quick Start Guide</h1>
+        
+        <div class="success">
+            <strong>Welcome!</strong> Your website is ready to use. This guide will show you how to customize it in 5 minutes.
+        </div>
+
+        <h2>📂 What You Have</h2>
+        <ul>
+            <li><strong>index.html</strong> - Home page</li>
+            <li><strong>about.html</strong> - About your research</li>
+            <li><strong>team.html</strong> - Team members (auto-loads from data.js)</li>
+            <li><strong>publications.html</strong> - Research papers (auto-loads from data.js)</li>
+            <li><strong>blog.html</strong> - Blog posts (auto-loads from data.js)</li>
+            <li><strong>contact.html</strong> - Contact form</li>
+            <li><strong>js/data.js</strong> - ⭐ YOUR MAIN FILE TO EDIT</li>
+        </ul>
+
+        <h2>🎯 5-Minute Setup</h2>
+
+        <div class="task">
+            <h3>Step 1: Open js/data.js</h3>
+            <p>This is where you'll make most of your changes. Open it in any text editor (Notepad, TextEdit, VS Code, etc.)</p>
+        </div>
+
+        <div class="task">
+            <h3>Step 2: Add Your Team Members</h3>
+            <p>Find the <code>teamMembers</code> section and update the sample data with your actual team members. Just change the text inside the quotes!</p>
+            <p><strong>Example:</strong></p>
+            <pre style="background: #f5f5f5; padding: 10px; border-radius: 5px;">
+name: "Dr. Your Name",
+role: "Your Role",
+email: "<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="730a1c06015d161e121a1f33151f1c0116125e121a5d1c0114">[email&#160;protected]</a>",</pre>
+        </div>
+
+        <div class="task">
+            <h3>Step 3: Add Your Publications</h3>
+            <p>Find the <code>publications</code> section. Copy an existing entry and modify it with your publication details.</p>
+        </div>
+
+        <div class="task">
+            <h3>Step 4: Customize Colors (Optional)</h3>
+            <p>Open <code>css/styles.css</code> and find the <code>:root</code> section at the top. Change the color codes to match your preferences.</p>
+        </div>
+
+        <div class="task">
+            <h3>Step 5: Update Contact Info</h3>
+            <p>Open <code>contact.html</code> and update the email, office location, and social media links.</p>
+        </div>
+
+        <h2>⚠️ Important Rules</h2>
+        <div class="warning">
+            <strong>When editing js/data.js:</strong>
+            <ul>
+                <li>Keep all quotation marks: <code>"like this"</code></li>
+                <li>Keep all commas between entries (except the last one)</li>
+                <li>Don't delete brackets: <code>{ } [ ]</code></li>
+                <li>Save the file after making changes</li>
+            </ul>
+        </div>
+
+        <h2>🖼️ Adding Images</h2>
+        <ol>
+            <li>Put team photos in <code>images/team/</code> folder</li>
+            <li>Put blog images in <code>images/blog/</code> folder</li>
+            <li>Reference them in data.js: <code>image: "images/team/photo.jpg"</code></li>
+        </ol>
+
+        <h2>🌐 Testing Your Website</h2>
+        <p>To view your website:</p>
+        <ol>
+            <li>Simply double-click <code>index.html</code></li>
+            <li>It will open in your web browser</li>
+            <li>Click around to see all the pages</li>
+            <li>After making changes, refresh the page (F5) to see updates</li>
+        </ol>
+
+        <h2>📤 Publishing Your Website</h2>
+        <p>When you're ready to go live, you have several free options:</p>
+        
+        <div style="text-align: center; margin: 30px 0;">
+            <a href="https://pages.github.com/" target="_blank" class="button">GitHub Pages (Free)</a>
+            <a href="https://www.netlify.com/" target="_blank" class="button">Netlify (Free)</a>
+            <a href="https://vercel.com/" target="_blank" class="button">Vercel (Free)</a>
+        </div>
+
+        <h2>❓ Need Help?</h2>
+        <ul>
+            <li>Read the full <code>README.md</code> file for detailed instructions</li>
+            <li>Each HTML file has helpful comments showing what to edit</li>
+            <li>The <code>js/data.js</code> file has instructions for adding content</li>
+            <li>If something breaks, undo your last change and try again</li>
+        </ul>
+
+        <div class="success">
+            <strong>You're all set!</strong> Start by opening <code>js/data.js</code> and updating it with your team's information. The website will automatically display your changes.
+        </div>
+
+        <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 2px solid #eee;">
+            <p style="color: #7f8c8d;">Built for the Florea AI Research Project</p>
+          

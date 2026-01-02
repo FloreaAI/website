@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Blog - Florea AI Insights & Research Updates</title>
+    <meta name="title" content="Blog - Florea AI Insights & Research Updates">
+    <meta name="description" content="Read the latest insights, research updates, and thought leadership from Florea AI on virtue-centered AI, character development, and human flourishing.">
+    <meta name="keywords" content="AI blog, virtue AI insights, character development blog, ethical AI news, human flourishing articles">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.florea-ai.org/blog.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.florea-ai.org/blog.html">
+    <meta property="og:title" content="Blog - Florea AI Insights & Research Updates">
+    <meta property="og:description" content="Read the latest insights and research updates from Florea AI on virtue-centered AI and character development.">
+    <meta property="og:image" content="https://www.florea-ai.org/images/Florea_AI.png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!--
+    ============================================================================
+    BLOG PAGE - Content loads automatically from js/data.js
+    To add/edit blog posts, go to js/data.js and follow instructions there
+    ============================================================================
+    -->
+
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-nav">
+                <img src="images/Florea_AI.png" alt="Florea AI Logo">
+                <div class="logo-text">
+                    <h1>FLOREA AI</h1>
+                    <p>Research for Human Flourishing</p>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="advisors.html">Advisors</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <span class="material-icons">menu</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Blog</h1>
+            <p>Insights and perspectives from our research journey</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-controls">
+                <button class="filter-btn active" onclick="filterBlog('all')">All Posts</button>
+                <button class="filter-btn" onclick="filterBlog('Psychology')">Psychology</button>
+                <button class="filter-btn" onclick="filterBlog('Technology')">Technology</button>
+                <button class="filter-btn" onclick="filterBlog('Philosophy')">Philosophy</button>
+                <button class="filter-btn" onclick="filterBlog('Research Methods')">Research Methods</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="blog-page-section">
+        <div class="container">
+            <!-- Blog posts load here automatically from data.js -->
+            <div id="blog-grid" class="blog-grid">
+                <!-- Content loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter CTA -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter">
+                <h2>Never Miss an Update</h2>
+                <p>Subscribe to receive our latest blog posts and research updates</p>
+                <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content container">
+            <div class="footer-section">
+                <h3>About Florea AI</h3>
+                <p>An interdisciplinary research project dedicated to developing AI conversational agents that promote character virtues and long-term human flourishing.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="team.html">Team</a>
+                <a href="advisors.html">Advisors</a>
+                <a href="publications.html">Publications</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section" style="display: none;">
+                <h3>Resources</h3>
+                <a href="#">Open Source Code</a>
+                <a href="#">Datasets</a>
+                <a href="#">Documentation</a>
+                <a href="#">Research Tools</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:florea.virtue.ai@gmail.com">florea.virtue.ai@gmail.com</a></p>
+                <p>For collaboration inquiries and research partnerships</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Florea AI. All rights reserved. | Building AI for Human Flourishing</p>        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

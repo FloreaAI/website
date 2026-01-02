@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post - Florea AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!--
+    ============================================================================
+    BLOG POST PAGE - Content loads automatically from URL parameter
+    This page displays individual blog posts from data.js
+    ============================================================================
+    -->
+
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-nav">
+                <img src="images/Florea_AI.png" alt="Florea AI Logo">
+                <div class="logo-text">
+                    <h1>FLOREA AI</h1>
+                    <p>Research for Human Flourishing</p>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="advisors.html">Advisors</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <span class="material-icons">menu</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Post Content -->
+    <article class="blog-post-page">
+        <div class="container-narrow">
+            <div class="blog-post-header">
+                <div class="post-category" id="post-category"></div>
+                <h1 id="post-title"></h1>
+                <div class="post-meta">
+                    <span class="post-author" id="post-author"></span>
+                    <span class="post-date" id="post-date"></span>
+                </div>
+            </div>
+            
+            <div class="post-image-container" id="post-image-container">
+                <!-- Image loads here if available -->
+            </div>
+            
+            <div class="post-content" id="post-content">
+                <!-- Blog post content loads here -->
+            </div>
+            
+            <div class="post-footer">
+                <a href="blog.html" class="btn btn-secondary">
+                    <span class="material-icons">arrow_back</span>
+                    Back to Blog
+                </a>
+            </div>
+        </div>
+    </article>
+
+    <!-- Related Posts -->
+    <section class="related-posts-section">
+        <div class="container">
+            <h2>Related Posts</h2>
+            <div id="related-posts" class="blog-grid">
+                <!-- Related posts load here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content container">
+            <div class="footer-section">
+                <h3>About Florea AI</h3>
+                <p>An interdisciplinary research project dedicated to developing AI conversational agents that promote character virtues and long-term human flourishing.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="team.html">Team</a>
+                <a href="advisors.html">Advisors</a>
+                <a href="publications.html">Publications</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section" style="display: none;">
+                <h3>Resources</h3>
+                <a href="#">Open Source Code</a>
+                <a href="#">Datasets</a>
+                <a href="#">Documentation</a>
+                <a href="#">Research Tools</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="85e6eaebf1e4e6f1c5e3e9eaf7e0e4a8e4ecabeaf7e2">[email&#160;protected]</a></p>
+                <p>For collaboration inquiries and research partnerships</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Florea AI. All rights reserved. | Building AI for Human Flourishing</p>        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
