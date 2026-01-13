@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Our Team - Florea AI Researchers & Scientists</title>
+    <meta name="title" content="Our Team - Florea AI Researchers & Scientists">
+    <meta name="description" content="Meet the interdisciplinary team of researchers, psychologists, computer scientists, and philosophers behind Florea AI's virtue-centered AI development.">
+    <meta name="keywords" content="Florea AI team, AI researchers, virtue ethics researchers, psychology researchers, computer science team">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.florea-ai.org/team.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.florea-ai.org/team.html">
+    <meta property="og:title" content="Our Team - Florea AI Researchers & Scientists">
+    <meta property="og:description" content="Meet the interdisciplinary team behind Florea AI's virtue-centered AI development.">
+    <meta property="og:image" content="https://www.florea-ai.org/images/Florea_AI.png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!--
+    ============================================================================
+    TEAM PAGE - Content loads automatically from js/data.js
+    To add/edit team members, go to js/data.js and follow instructions there
+    ============================================================================
+    -->
+
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-nav">
+                <img src="images/Florea_AI.png" alt="Florea AI Logo">
+                <div class="logo-text">
+                    <h1>FLOREA AI</h1>
+                    <p>Research for Human Flourishing</p>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="team.html" class="active">Team</a></li>
+                <li><a href="advisors.html">Advisors</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <span class="material-icons">menu</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Team</h1>
+            <p>Interdisciplinary experts working together to advance virtue-centered AI</p>
+        </div>
+    </section>
+
+    <!-- Team Grid -->
+    <section class="team-page-section">
+        <div class="container">
+            <!-- Team members load here automatically from data.js -->
+            <div id="team-grid" class="team-grid">
+                <!-- Content loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Us Section -->
+    <section class="join-section">
+        <div class="container">
+            <div class="join-content">
+                <h2>Join Our Research Team</h2>
+                <p>We're always looking for talented researchers passionate about human flourishing and AI ethics.</p>
+                <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Modal -->
+    <div id="modal" class="modal" onclick="closeModalOnOutside(event)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <button class="close-modal" onclick="closeModal()">×</button>
+                <div class="modal-header-content">
+                    <h2 id="modal-name"></h2>
+                    <p id="modal-role" class="modal-role"></p>
+                    <p id="modal-email" class="modal-email"></p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <h4>Background</h4>
+                <p id="modal-bio"></p>
+                
+                <h4>Research Interests</h4>
+                <p id="modal-research"></p>
+                
+                <h4>Education</h4>
+                <p id="modal-education"></p>
+                
+                <h4>Publications & Achievements</h4>
+                <p id="modal-publications"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content container">
+            <div class="footer-section">
+                <h3>About Florea AI</h3>
+                <p>An interdisciplinary research project dedicated to developing AI conversational agents that promote character virtues and long-term human flourishing.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="team.html">Team</a>
+                <a href="advisors.html">Advisors</a>
+                <a href="publications.html">Publications</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section" style="display: none;">
+                <h3>Resources</h3>
+                <a href="#">Open Source Code</a>
+                <a href="#">Datasets</a>
+                <a href="#">Documentation</a>
+                <a href="#">Research Tools</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:florea.virtue.ai@gmail.com">florea.virtue.ai@gmail.com</a></p>
+                <p>For collaboration inquiries and research partnerships</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Florea AI. All rights reserved. | Building AI for Human Flourishing</p>        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

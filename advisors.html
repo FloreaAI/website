@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Scientific Advisors - Florea AI Expert Advisory Board</title>
+    <meta name="title" content="Scientific Advisors - Florea AI Expert Advisory Board">
+    <meta name="description" content="Meet Florea AI's distinguished scientific advisory board of experts in AI ethics, positive psychology, philosophy, and character virtue research.">
+    <meta name="keywords" content="Florea AI advisors, AI ethics experts, positive psychology advisors, philosophy advisors, scientific advisory board">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.florea-ai.org/advisors.html">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.florea-ai.org/advisors.html">
+    <meta property="og:title" content="Scientific Advisors - Florea AI Expert Advisory Board">
+    <meta property="og:description" content="Meet Florea AI's distinguished scientific advisory board of experts in AI ethics, positive psychology, and philosophy.">
+    <meta property="og:image" content="https://www.florea-ai.org/images/Florea_AI.png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!--
+    ============================================================================
+    SCIENTIFIC ADVISORS PAGE - Content loads automatically from js/data.js
+    To add/edit advisors, go to js/data.js and follow instructions there
+    ============================================================================
+    -->
+
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-nav">
+                <img src="images/Florea_AI.png" alt="Florea AI Logo">
+                <div class="logo-text">
+                    <h1>FLOREA AI</h1>
+                    <p>Research for Human Flourishing</p>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="advisors.html" class="active">Advisors</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <span class="material-icons">menu</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Scientific Advisors</h1>
+            <p>Distinguished experts guiding our interdisciplinary research</p>
+        </div>
+    </section>
+
+    <!-- Advisors Introduction -->
+    <section class="advisors-intro-section">
+        <div class="container">
+            <div class="intro-content">
+                <!-- TO EDIT: Change the introduction text below -->
+                <p class="lead-text">Our scientific advisory board consists of renowned experts from psychology, computer science, philosophy, and ethics who provide invaluable guidance and oversight for our research on AI for human flourishing.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advisors Grid -->
+    <section class="advisors-page-section">
+        <div class="container">
+            <!-- Advisors load here automatically from data.js -->
+            <div id="advisors-grid" class="advisors-grid">
+                <!-- Content loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Advisory Board Information -->
+    <section class="advisory-info-section">
+        <div class="container">
+            <div class="info-cards">
+                <!-- TO EDIT: Modify these cards or add more -->
+                <div class="info-card">
+                    <span class="material-icons">school</span>
+                    <h3>Expert Guidance</h3>
+                    <p>Our advisors bring decades of experience in their respective fields, ensuring our research maintains the highest standards.</p>
+                </div>
+                
+                <div class="info-card">
+                    <span class="material-icons">groups</span>
+                    <h3>Interdisciplinary Perspective</h3>
+                    <p>Advisors from diverse backgrounds help us bridge disciplinary silos and create truly integrative frameworks.</p>
+                </div>
+                
+                <div class="info-card">
+                    <span class="material-icons">lightbulb</span>
+                    <h3>Strategic Direction</h3>
+                    <p>The advisory board helps shape our research agenda and ensures alignment with broader scientific and ethical goals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advisor Modal -->
+    <div id="advisor-modal" class="modal" onclick="closeAdvisorModalOnOutside(event)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <div class="modal-header">
+                <button class="close-modal" onclick="closeAdvisorModal()">×</button>
+                <div class="modal-header-content">
+                    <h2 id="advisor-modal-name"></h2>
+                    <p id="advisor-modal-title" class="modal-role"></p>
+                    <p id="advisor-modal-affiliation" class="modal-email"></p>
+                </div>
+            </div>
+            <div class="modal-body">
+                <h4>Biography</h4>
+                <p id="advisor-modal-bio"></p>
+                
+                <h4>Expertise</h4>
+                <p id="advisor-modal-expertise"></p>
+                
+                <h4>Notable Contributions</h4>
+                <p id="advisor-modal-contributions"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content container">
+            <div class="footer-section">
+                <h3>About Florea AI</h3>
+                <p>An interdisciplinary research project dedicated to developing AI conversational agents that promote character virtues and long-term human flourishing.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="team.html">Team</a>
+                <a href="advisors.html">Advisors</a>
+                <a href="advisors.html">Advisors</a>
+                <a href="publications.html">Publications</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section" style="display: none;">
+                <h3>Resources</h3>
+                <a href="#">Open Source Code</a>
+                <a href="#">Datasets</a>
+                <a href="#">Documentation</a>
+                <a href="#">Research Tools</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:florea.virtue.ai@gmail.com">florea.virtue.ai@gmail.com</a></p>
+                <p>For collaboration inquiries and research partnerships</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Florea AI. All rights reserved. | Building AI for Human Flourishing</p>        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

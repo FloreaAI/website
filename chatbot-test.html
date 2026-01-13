@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Test</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <section class="chatbot-demo-section">
+        <div class="container">
+            <h1>Chatbot Test Page</h1>
+            <div class="chatbot-demo-container">
+                <div class="chatbot-window">
+                    <div class="chatbot-header">
+                        <div class="chatbot-title">
+                            <span class="material-icons">smart_toy</span>
+                            <span>Florea AI Coach</span>
+                        </div>
+                        <div class="chatbot-status">
+                            <span class="status-dot"></span>
+                            <span>Demo</span>
+                        </div>
+                    </div>
+                    <div class="chatbot-messages" id="chatbot-messages">
+                        <!-- Messages will be added dynamically -->
+                    </div>
+                    <div class="chatbot-footer">
+                        <div class="typing-indicator" id="typing-indicator">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Chatbot conversation data
+        const chatbotConversation = [
+            {
+                type: 'user',
+                text: "I've been feeling really frustrated lately. I'm trying to learn a new skill, but progress is so slow. I just want to give up.",
+                delay: 1000
+            },
+            {
+                type: 'ai',
+                text: "I hear you. Learning something new can feel challenging, especially when progress isn't as quick as we'd like. Can you tell me more about what you're learning and what's making it feel frustrating?",
+                delay: 3000
+            },
+            {
+                type: 'user',
+                text: "I'm learning to play guitar. I practice every day, but I still can't play the songs I want to. It's been three months!",
+                delay: 2500
+            },
+            {
+                type: 'ai',
+                text: "Three months of daily practice shows real dedication—that's something to recognize in yourself. It sounds like you're experiencing what many learners face: the gap between current ability and aspirations. Let's think about patience here. What would it look like to approach this journey with more patience toward yourself?",
+                delay: 4000
+            },
+            {
+                type: 'user',
+                text: "I guess... maybe celebrating small wins? But it still feels slow.",
+                delay: 2000
+            },
+            {
+                type: 'ai',
+                text: "That's a wonderful insight. Patience isn't about being passive—it's about recognizing that meaningful growth takes time. Consider this: those small wins you mentioned are actually evidence of progress. What if you kept a practice journal noting one thing you did better each day, no matter how small?",
+                delay: 4500
+            },
+            {
+                type: 'user',
+                text: "That could help me see the progress I'm actually making instead of just focusing on what I can't do yet.",
+                delay: 2500
+            },
+            {
+                type: 'ai',
+                text: "Exactly. You're developing patience not just with the guitar, but as a character strength that will serve you in many areas of life. This practice of noticing small progress, reframing setbacks as learning, and maintaining commitment despite slow progress—these are all expressions of patience. How does this perspective feel?",
+                delay: 4000
+            },
+            {
+                type: 'user',
+                text: "Actually, it helps a lot. I think I can stick with it if I change how I'm thinking about the process.",
+                delay: 2000
+            }
+        ];
+
+        let chatbotMessageIndex = 0;
+        let chatbotTimeout;
+
+        function displayChatbotMessage(message, index) {
+            const messagesContainer = document.getElementById('chatbot-messages');
+            const typingIndicator = document.getElementById('typing-indicator');
+            
+            console.log('Displaying message:', message.type);
+            
+            if (!messagesContainer) {
+                console.error('Container not found!');
+                return;
+            }
+            
+            // Show typing indicator
+            if (message.type === 'ai' && typingIndicator) {
+                typingIndicator.classList.add('active');
+            }
+            
+            setTimeout(() => {
+                // Hide typing indicator
+                if (typingIndicator) {
+                    typingIndicator.classList.remove('active');
+                }
+                
+                // Create message element
+                const messageDiv = document.createElement('div');
+                messageDiv.className = `message ${message.type}`;
+                
+                const avatar = document.createElement('div');
+                avatar.className = 'message-avatar';
+                avatar.innerHTML = message.type === 'ai' 
+                    ? '<span class="material-icons">smart_toy</span>' 
+                    : '<span class="material-icons">person</span>';
+                
+                const content = document.createElement('div');
+                content.className = 'message-content';
+                content.textContent = message.text;
+                
+                messageDiv.appendChild(avatar);
+                messageDiv.appendChild(content);
+                messagesContainer.appendChild(messageDiv);
+                
+                console.log('Message added!');
+                
+                // Scroll to bottom
+                messagesContainer.scrollTop = messagesContainer.scrollHeight;
+                
+                // Continue to next message or restart
+                chatbotMessageIndex++;
+                if (chatbotMessageIndex < chatbotConversation.length) {
+                    const nextMessage = chatbotConversation[chatbotMessageIndex];
+                    chatbotTimeout = setTimeout(() => {
+                        displayChatbotMessage(nextMessage, chatbotMessageIndex);
+                    }, nextMessage.delay);
+                } else {
+                    // Restart conversation after a pause
+                    chatbotTimeout = setTimeout(() => {
+                        messagesContainer.innerHTML = '';
+                        chatbotMessageIndex = 0;
+                        displayChatbotMessage(chatbotConversation[0], 0);
+                    }, 8000);
+                }
+            }, message.type === 'ai' ? 2000 : 0);
+        }
+
+        // Start when page loads
+        window.addEventListener('load', () => {
+            console.log('Page loaded, starting chatbot...');
+            setTimeout(() => {
+                displayChatbotMessage(chatbotConversation[0], 0);
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
