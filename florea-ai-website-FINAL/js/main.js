@@ -1,7 +1,7 @@
 
 /*
 ================================================================================
-FLOREA AI WEBSITE - MAIN JAVASCRIPT FILE (PATCHED)
+FLOREA AI WEBSITE - MAIN JAVASCRIPT FILE
 ================================================================================
 This file handles all the interactive functionality of the website.
 All content changes should be made in data.js
