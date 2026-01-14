@@ -2044,3 +2044,54 @@ footer {
     margin: 0;
     font-size: 0.95rem;
 }
+
+
+/* ===========================
+   Mobile Nav: Drop-down + Backdrop
+   =========================== */
+
+/* Ensure the dropdown is positioned relative to the container */
+.nav-container { position: relative; }
+
+@media (max-width: 768px) {
+  /* When nav is open, show links as a dropdown */
+  nav.open .nav-links {
+    display: flex;                 /* overrides the mobile 'display:none' */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    flex-direction: column;
+    gap: 0;
+    padding: 0.5rem 0;
+    border-top: 1px solid #eee;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    z-index: 1001;                 /* nav is 1000 in your CSS */
+    animation: menuSlide 0.25s ease-out;
+  }
+
+  nav.open .nav-links li { border-bottom: 1px solid #f1f5f9; }
+  nav.open .nav-links li:last-child { border-bottom: 0; }
+
+  nav.open .nav-links a {
+    display: block;
+    padding: 1rem 2rem;
+  }
+
+  /* Backdrop to dim the page when menu is open */
+  .nav-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.25);
+    z-index: 999; /* sits under the nav (1000) but above content */
+    opacity: 0;
+    animation: fadeIn 0.2s forwards;
+  }
+
+  @keyframes menuSlide {
+    from { transform: translateY(-8px); opacity: 0; }
+    to   { transform: translateY(0);    opacity: 1; }
+  }
+  @keyframes fadeIn { to { opacity: 1; } }
+}
