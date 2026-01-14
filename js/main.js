@@ -679,3 +679,102 @@ function truncateText(text, maxLength) {
 }
 
 console.log('Florea AI Website loaded successfully!');
+
+
+/* ============================================================================
+   MOBILE MENU: Accessible drop-down for small screens
+   ============================================================================ */
+document.addEventListener('DOMContentLoaded', function () {
+  const nav = document.getElementById('navbar');
+  if (!nav) return;
+
+  const menuToggle = nav.querySelector('.mobile-menu');
+  const icon = menuToggle ? menuToggle.querySelector('.material-icons') : null;
+  const links = nav.querySelector('.nav-links');
+
+  // Accessibility / semantics on existing HTML
+  if (menuToggle) {
+    menuToggle.setAttribute('role', 'button');
+    menuToggle.setAttribute('tabindex', '0');
+    menuToggle.setAttribute('aria-label', 'Toggle navigation menu');
+    menuToggle.setAttribute('aria-expanded', 'false');
+    if (links && !links.id) links.id = 'primary-navigation';
+    menuToggle.setAttribute('aria-controls', links ? links.id : '');
+  }
+
+  let backdrop = null;
+
+  function addBackdrop() {
+    if (backdrop) return;
+    backdrop = document.createElement('div');
+    backdrop.className = 'nav-backdrop';
+    backdrop.addEventListener('click', closeMenu);
+    document.body.appendChild(backdrop);
+  }
+
+  function removeBackdrop() {
+    if (!backdrop) return;
+    backdrop.removeEventListener('click', closeMenu);
+    backdrop.remove();
+    backdrop = null;
+  }
+
+  function openMenu() {
+    if (!nav) return;
+    nav.classList.add('open');
+    if (menuToggle) menuToggle.setAttribute('aria-expanded', 'true');
+    if (icon) icon.textContent = 'close';
+    addBackdrop();
+
+    // Prevent background scroll while menu is open
+    document.documentElement.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMenu() {
+    if (!nav) return;
+    nav.classList.remove('open');
+    if (menuToggle) menuToggle.setAttribute('aria-expanded', 'false');
+    if (icon) icon.textContent = 'menu';
+    removeBackdrop();
+
+    document.documentElement.style.overflow = '';
+    document.body.style.overflow = '';
+  }
+
+  function toggleMenu() {
+    if (nav.classList.contains('open')) closeMenu();
+    else openMenu();
+  }
+
+  // Toggle via click
+  if (menuToggle) {
+    menuToggle.addEventListener('click', toggleMenu);
+    // Toggle via keyboard (Enter/Space)
+    menuToggle.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggleMenu();
+      }
+    });
+  }
+
+  // Close when a link is clicked (typical mobile UX)
+  if (links) {
+    links.querySelectorAll('a').forEach((a) =>
+      a.addEventListener('click', closeMenu)
+    );
+  }
+
+  // Close on Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeMenu();
+  });
+
+  // If resized to desktop, ensure the menu is closed & page is scrollable
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+      closeMenu();
+    }
+  });
+});
