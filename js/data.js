@@ -137,7 +137,7 @@ const publications = [
     {
         id: "pub1",
         title: "Advances in subjective well-being research",
-        authors: "Ed Diener,Shigehiro Oishi and Louis Tay",
+        authors: "Ed Diener, Shigehiro Oishi, and Louis Tay",
         year: 2018,
         journal: "Nature Human Behaviour",
         abstract: "The empirical science of subjective well-being, popularly referred to as happiness or satisfaction, has grown enormously in the past decade. In this Review, we selectively highlight and summarize key researched areas that continue to develop. We describe the validity of measures and their potential biases, as well as the scientific methods used in this field. We describe some of the predictors of subjective well-being such as temperament, income and supportive social relationships. Higher subjective well-being has been associated with good health and longevity, better social relationships, work performance and creativity. At the community and societal levels, cultures differ not only in their levels of well-being but also to some extent in the types of subjective well-being they most value. Furthermore, there are both universal and unique predictors of subjective well-being in various societies. National accounts of subjective well-being to help inform policy decisions at the community and societal levels are now being considered and adopted. Finally we discuss the unknowns in the science and needed future research.",
@@ -160,7 +160,7 @@ const publications = [
     {
         id: "pub3",
         title: "Conceptualizing “positive attributes” across psychological perspectives",
-        authors: "Danielle Wilson, Vincent Ng, Nicole Alonso, Anne Jeffrey, Louis Tay",
+        authors: "Danielle Wilson, Vincent Ng, Nicole Alonso, Anne Jeffrey, and Louis Tay",
         year: 2023,
         journal: " Journal of Personality",
         abstract: "The growth of positive psychology has birthed debate on the nature of what “positive” really means. Conceptualizations of positive attributes vary across psychological perspectives, and it appears these definitional differences stem from standards for “positive” espoused by three normative ethical frameworks: consequentialism, deontology, and virtue ethics. When definitions of “positive” do not align with one of these ethical schools, it appears researchers rely on preference to distinguish positive attributes. In either case, issues arise when researchers do not make their theoretical alignment explicit, leading to value-laden, often subjective criteria being smuggled into science as a description of what is positive.",
@@ -171,7 +171,7 @@ const publications = [
     {
         id: "pub4",
         title: "Character Traits Predict Health and Well-Being beyond Personality",
-        authors: "Danielle Wilson,Vincent Ng,Jeff Foster & Louis Tay",
+        authors: "Danielle Wilson, Vincent Ng, Jeff Foster, and Louis Tay",
         year: 2023,
         journal: "Neural Information Processing Systems (NeurIPS)",
         abstract: "We examined the incremental validity of character in predicting health outcomes and well-being beyond personality traits and investigated the extent to which health-related behaviors mediate the relationship between character and well-being. Findings indicate that several character cores (e.g., transcendence, fortitude) predict well-being, health behaviors, and health outcomes beyond different measures of personality traits, indicating that character is discriminable from personality as indicated by incremental prediction. In particular, fortitude, temperance, transcendence, and sincerity appear to be key players. Implications for character research are discussed.",
@@ -194,7 +194,7 @@ const publications = [
   {
         id: "pub6",
         title: "Behavioral measures of humility: Part 1. Theoretical and methodological review",
-        authors: "Daryl R. Van Tongeren, Vincent Ng, Louis Hickman and Louis Tay",
+        authors: "Daryl R. Van Tongeren, Vincent Ng, Louis Hickman, and Louis Tay",
         year: 2022,
         journal: "The Journal of Positive Psychology",
         abstract: "Research on humility has burgeoned. However, behavioral assessments of humility that do not relyon self-reports have developed much more slowly. The purpose of this paper is to take stock ofexisting approaches to conceptualize and measure humility. Specifically, we provide a conceptualoverview of humility, including the limitations of current methodological approaches to studyinghumility and the need for behavioral assessments. In addition, we argue that behavioral assess-ments of humility may inform broader measures of virtues by considering both the relevance ofand the degree to which actual behaviors pertaining to that virtue are expressed. Understandingthe current conceptual and methodological limitations of approaches to humility will better situateresearch efforts aimed at catalyzing behavioral measures of humility.",
@@ -205,7 +205,7 @@ const publications = [
   {
         id: "pub7",
         title: "Behavioral measures of humility: Part 2. Conceptual mapping and charting ways forward",
-        authors: "Daryl R. Van Tongeren, Vincent Ng, Louis Hickman and Louis Tay",
+        authors: "Daryl R. Van Tongeren, Vincent Ng, Louis Hickman, and Louis Tay",
         year: 2022,
         journal: "The Journal of Positive Psychology",
         abstract: "Given that current methodological approaches to humility have largely ignored behavioral mea-sures, we sought to provide a conceptual map of behavioral assessments. Toward that end, weoffer an initial map of conceptual bases and likely indicators for behavioral assessments of humility,and suggest a research agenda for advancing the scientific study of humility. Specifically, wediscuss the four features of behavioral measures – scalability, specificity, sensitivity, and selectivity –that offer such assessments a great advantage over other methodological approaches. In addition,we make three empirically testable propositions, addressing methodological alignment, domainspecificity, and social desirability, and discuss potential behavioral interventions for cultivatinghumility and implications for research and practice. We hope this empirically testable frameworkwill provide a fruitful way for researchers to better conceptualize and measure humility.",
