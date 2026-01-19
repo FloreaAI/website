@@ -141,7 +141,7 @@ const publications = [
         year: 2018,
         journal: "Nature Human Behaviour",
         abstract: "The empirical science of subjective well-being, popularly referred to as happiness or satisfaction, has grown enormously in the past decade. In this Review, we selectively highlight and summarize key researched areas that continue to develop. We describe the validity of measures and their potential biases, as well as the scientific methods used in this field. We describe some of the predictors of subjective well-being such as temperament, income and supportive social relationships. Higher subjective well-being has been associated with good health and longevity, better social relationships, work performance and creativity. At the community and societal levels, cultures differ not only in their levels of well-being but also to some extent in the types of subjective well-being they most value. Furthermore, there are both universal and unique predictors of subjective well-being in various societies. National accounts of subjective well-being to help inform policy decisions at the community and societal levels are now being considered and adopted. Finally we discuss the unknowns in the science and needed future research.",
-        pdfLink: "file:///C:/Users/rediet/Downloads/s41562-018-0307-6%20(3).pdf",
+        pdfLink: "https://www.nature.com/articles/s41562-018-0307-6",
         doiLink: "https://www.nature.com/articles/s41562-018-0307-6",
         featured: true
     },
@@ -164,7 +164,7 @@ const publications = [
         year: 2023,
         journal: " Journal of Personality",
         abstract: "The growth of positive psychology has birthed debate on the nature of what “positive” really means. Conceptualizations of positive attributes vary across psychological perspectives, and it appears these definitional differences stem from standards for “positive” espoused by three normative ethical frameworks: consequentialism, deontology, and virtue ethics. When definitions of “positive” do not align with one of these ethical schools, it appears researchers rely on preference to distinguish positive attributes. In either case, issues arise when researchers do not make their theoretical alignment explicit, leading to value-laden, often subjective criteria being smuggled into science as a description of what is positive.",
-        pdfLink: "file:///C:/Users/rediet/Downloads/Journal%20of%20Personality%20-%202023%20-%20Wilson%20-%20Conceptualizing%20%20positive%20attributes%20%20across%20psychological%20perspectives.pdf",
+        pdfLink: "https://onlinelibrary.wiley.com/doi/10.1111/jopy.12873",
         doiLink: " https://doi.org/10.1111/jopy.12873",
         featured: false
     },
