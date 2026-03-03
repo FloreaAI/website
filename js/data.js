@@ -123,7 +123,7 @@ const teamMembers = [
         email: "hmerzdor@purdue.edu",
         bio: "Hillary Merzdorf is a Research Operations Administrator in the Department of Psychological Sciences at Purdue University. She earned a Ph.D. in Engineering Education from Purdue University in 2022, where she also earned degrees in Psychology, Educational Psychology, and Industrial Engineering. She has experience in instructional design, assessment development and validation, and user-centered educational technology. She is interested in the role of computers and intelligent systems to support cognition and learning, and she enjoys mentoring student researchers.",
         research: "Educational technology, instructional design, user-centered design, AI in learning",
-        education: "Ph.D. in Engineering Education from Purdue University | Degrees in Psychology, Educational Psychology, and Industrial Engineering",
+        education: "Ph.D. in Engineering Education from Purdue University | M.S. Degrees in Educational Psychology and Industrial Engineering",
         publications: "Research on educational technology and assessment development"
     },
     {
