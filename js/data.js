@@ -101,9 +101,21 @@ const teamMembers = [
         education: "Ph.D. Student in Computer Science at University of Toronto",
         publications: "Research on LLMs in education and creativity, AI coaching systems, personalized mental health interventions"
     },
+        {
+        id: "member7",
+        name: "Daniel Monroe",
+        role: "Ph.D. Student",
+        department: "Computer Science",
+        image: "images/team/Daniel Monroe.png",
+        email: "daniel.monroe@gmail.utoronto.ca",
+        bio: "Daniel Monroe is Ph.D. student at the university of Toronto, supervised by Ashton Anderson. He holds a B.A. in mathematics from the University of California, San Diego.",
+        research: "Machine learning, reinforcement learning, formal verification for AI",
+        education: "B.A. in Mathematics from the University of California, San Diego",
+        publications: "Chessformer: a Unified Architecture for Chess Modeling (ICLR 2026)"
+    },
     // Research Staff
     {
-        id: "member7",
+        id: "member8",
         name: "Hillary Merzdorf",
         role: "Grant Manager",
         department: "Research Operations",
@@ -115,7 +127,7 @@ const teamMembers = [
         publications: "Research on educational technology and assessment development"
     },
     {
-        id: "member8",
+        id: "member9",
         name: "Rediet Shiferahu",
         role: "Communications Specialist",
         department: "Communications & Research",
