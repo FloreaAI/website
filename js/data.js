@@ -66,12 +66,12 @@ const teamMembers = [
     // Postdoctoral Researchers
     {
         id: "member4",
-        name: "Amel Chekili",
+        name: "Amal Chekili",
         role: "Postdoctoral Research Associate",
         department: "Industrial-Organizational Psychology",
         image: "images/team/Amal Chekili.jpg",
         email: "achekili@purdue.edu",
-        bio: "Amel Chekili is a Postdoctoral Research Associate in the WAM Lab at Purdue University. She earned her doctorate in Industrial-Organizational Psychology from Virginia Tech, where she also completed a master's degree in Data Analysis and Statistics. Her research is centered on studying the benefits, challenges, and opportunities of artificial intelligence (AI) in organizational settings. Leveraging conversational large language models and other natural-language-processing techniques, Amel tackles organizational problems while keeping a strong focus on diversity, equity, and inclusion. Through her work, she highlights AI's transformative potential and the considerations needed to foster more inclusive workplaces.",
+        bio: "Amal Chekili is a Postdoctoral Research Associate in the WAM Lab at Purdue University. She earned her doctorate in Industrial-Organizational Psychology from Virginia Tech, where she also completed a master's degree in Data Analysis and Statistics. Her research is centered on studying the benefits, challenges, and opportunities of artificial intelligence (AI) in organizational settings. Leveraging conversational large language models and other natural-language-processing techniques, Amel tackles organizational problems while keeping a strong focus on diversity, equity, and inclusion. Through her work, she highlights AI's transformative potential and the considerations needed to foster more inclusive workplaces.",
         research: "AI in organizational settings, diversity and inclusion, natural language processing, conversational AI",
         education: "Ph.D. in Industrial-Organizational Psychology from Virginia Tech | M.A. in Data Analysis and Statistics from Virginia Tech",
         publications: "Research on AI applications in organizational contexts with focus on DEI"
@@ -106,7 +106,7 @@ const teamMembers = [
         name: "Daniel Monroe",
         role: "Ph.D. Student",
         department: "Computer Science",
-        image: "images/team/Daniel Monroe.png",
+        image: "images/team/Daniel Monroe.jpg",
         email: "daniel.monroe@gmail.utoronto.ca",
         bio: "Daniel Monroe is Ph.D. student at the university of Toronto, supervised by Ashton Anderson. He holds a B.A. in mathematics from the University of California, San Diego.",
         research: "Machine learning, reinforcement learning, formal verification for AI",
